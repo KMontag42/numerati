@@ -14,6 +14,7 @@ jobs:
     container: rocker/verse
     env: # Or as an environment variable
       NUMERAIID: ${{ secrets.NUMERAIID }}
+      NUMERAIKEY: ${{ secrets.NUMERAIKEY }}
     steps:
       - uses: actions/checkout@v1
       - run: Rscript setup.R
