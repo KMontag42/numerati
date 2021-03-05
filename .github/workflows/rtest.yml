@@ -16,10 +16,14 @@ jobs:
       NUMERAIID: ${{ secrets.NUMERAIID }}
       NUMERAIKEY: ${{ secrets.NUMERAIKEY }}
     steps:
-      - uses: actions/checkout@v1
-      - run: Rscript setup.R
-      - run: Rscript download_data.R
-      - run: Rscript pipeline.R
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Run setup script
+        run: Rscript setup.R
+      - name: Download numerai data
+        run: Rscript download_data.R
+      - name: Run the pipline
+        run: Rscript pipeline.R
       - name: Upload results
         uses: actions/upload-artifact@main
         with:
