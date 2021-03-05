@@ -3,7 +3,7 @@
 # ==============================================================================
 
 # Making sure
-setwd("/home/joe/Repo/numerati")
+# setwd("/home/joe/Repo/numerati")
 
 # Preload
 pacman::p_load(data.table, stringr, pushoverr)
