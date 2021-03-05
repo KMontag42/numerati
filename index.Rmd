@@ -99,9 +99,8 @@ sd <- SharedData$new(d_new, key = ~key)
 # ==============================================================================
 
 # Define model names here
-models_all <- c("ia_ai", "the_razor", "woobe", "the_sweetspot", "the_half_and_half",
-               "the_divergent", "the_unexposed", "the_parachute", "low_cor_pred", "the_unburnt",
-               paste0("the_aijoe", 1:5))
+models_all <- c("krm", "krm_b", "krm_beb",
+               paste0("krm_", 1:5))
 
 # My Models (CORR)
 g_all_cor <-
