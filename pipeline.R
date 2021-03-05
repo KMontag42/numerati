@@ -10,7 +10,7 @@ pacman::p_load(data.table, stringr, pushoverr)
 library(Rnumerai)
 
 # API key
-source("set_key.R") # (don't upload to GitHub)
+# source("set_key.R") # (don't upload to GitHub)
 
 
 # Check and wait for latest data

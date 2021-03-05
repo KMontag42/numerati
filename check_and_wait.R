@@ -69,10 +69,10 @@ while (chk_updated == 0) {
     if (chk_updated == 1) cat("daily update is ready. Let's go!\n")
     
     # Pushoverr
-    pushover(message = "New Daily Score Available",
-             title = "Numerati Dashboard",
-             user = pushover_user,
-             app = pushover_app)
+    # pushover(message = "New Daily Score Available",
+    #          title = "Numerati Dashboard",
+    #          user = pushover_user,
+    #          app = pushover_app)
 
   }
 
@@ -83,10 +83,10 @@ while (chk_updated == 0) {
     cat("[Info]: HARD STOP :(\n")
     
     # Pushoverr
-    pushover(message = "[Error]: Hard Stop",
-             title = "Numerati Dashboard",
-             user = pushover_user,
-             app = pushover_app)
+    # pushover(message = "[Error]: Hard Stop",
+    #          title = "Numerati Dashboard",
+    #          user = pushover_user,
+    #          app = pushover_app)
     
   }
   
