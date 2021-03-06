@@ -14,7 +14,7 @@ library(Rnumerai)
 
 
 # Check and wait for latest data
-source("check_and_wait.R")
+# source("check_and_wait.R")
 
 
 # Download latest data
