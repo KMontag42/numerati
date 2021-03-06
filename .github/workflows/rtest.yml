@@ -22,14 +22,13 @@ jobs:
         run: Rscript setup.R
       - name: Run the pipline
         run: Rscript pipeline.R
-      - name: Upload results
-        uses: actions/upload-artifact@main
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          name: results
-          path: |
-            index.html
-            compare_corr.html
-            compare_mmc.html
-            compare_corrmmc.html
-            data.html
-            data.csv
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
