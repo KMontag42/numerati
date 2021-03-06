@@ -4,8 +4,6 @@ output:
   html_document: 
     highlight: zenburn  
     theme: spacelab
-    includes:
-       in_header: ga_header.html
 ---
 
 <br>
