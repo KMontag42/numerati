@@ -1,14 +1,16 @@
-name: RTest
+name: Build Numerati
 
 # Run this workflow every time a new commit pushed to your repository
-on: push
+on:
+  schedule:
+    - cron: 0 16 * * *
 
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
   rtest:
     # Name the Job
-    name: test out R
+    name: Build numerati dashboard
     # Set the type of machine to run on
     runs-on: ubuntu-latest
     container: rocker/verse
